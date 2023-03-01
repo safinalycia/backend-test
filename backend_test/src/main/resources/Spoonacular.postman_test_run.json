@@ -1,0 +1,864 @@
+{
+	"id": "2d084236-d8e6-423d-8a90-f919f9027d0f",
+	"name": "Spoonacular",
+	"timestamp": "2023-03-01T08:37:57.112Z",
+	"collection_id": "23853886-9b76587f-5e7b-439f-a804-2fa118e552ff",
+	"folder_id": 0,
+	"environment_id": "23853886-36c8ba9d-3fe3-4660-b8ad-0ea1e7385926",
+	"totalPass": 61,
+	"delay": "800",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-01T08:37:36.182Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "6714a0fb-7959-4239-bb81-fbbdd7283d2f",
+			"name": "Search Recipes",
+			"url": "https://api.spoonacular.com/recipes/complexSearch?cuisine=italian&apiKey=AUTH_VALUE",
+			"time": 305,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Response time is less than 200ms": true,
+				"Content-Type header is present": true,
+				"Server header is cloudflare": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Server header is cloudflare": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				305
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Response time is less than 200ms": true,
+					"Content-Type header is present": true,
+					"Server header is cloudflare": true
+				}
+			]
+		},
+		{
+			"id": "d5421531-41d7-4312-94b4-e3f4c1afb6ca",
+			"name": "Search RecipesSpanish",
+			"url": "https://api.spoonacular.com/recipes/complexSearch?cuisine=spanish&apiKey=AUTH_VALUE",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Response time is less than 200ms": true,
+				"Content-Type header is present": true,
+				"Content-Type header is application/json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Response time is less than 200ms": true,
+					"Content-Type header is present": true,
+					"Content-Type header is application/json": true
+				}
+			]
+		},
+		{
+			"id": "4ac30b3e-2908-44fe-9805-8f2331084b38",
+			"name": "SearchDiet",
+			"url": "https://api.spoonacular.com/recipes/complexSearch?apiKey=AUTH_VALUE",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Тело ответа содержит строку": true,
+				"Content-Type есть в Headers": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тело ответа содержит строку": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type есть в Headers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Тело ответа содержит строку": true,
+					"Content-Type есть в Headers": true
+				}
+			]
+		},
+		{
+			"id": "7530cd52-835d-415c-9a45-9d67c30aaf68",
+			"name": "SearchDietKeto",
+			"url": "https://api.spoonacular.com/recipes/complexSearch?diet=keto&apiKey=AUTH_VALUE",
+			"time": 93,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Тело ответа содержит строку": true,
+				"Content-Type есть в Headers": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тело ответа содержит строку": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type есть в Headers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				93
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Тело ответа содержит строку": true,
+					"Content-Type есть в Headers": true
+				}
+			]
+		},
+		{
+			"id": "22fbe71e-b614-4ff7-8584-a905c21f3ef1",
+			"name": "SearchExcludeCiusine",
+			"url": "https://api.spoonacular.com/recipes/complexSearch?excludeCuisine=italian&apiKey=AUTH_VALUE",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Тело ответа содержит строку": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тело ответа содержит строку": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Тело ответа содержит строку": true
+				}
+			]
+		},
+		{
+			"id": "e5d94b41-ccd4-4344-8706-30954e07651a",
+			"name": "SearchIncludeIngredients",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?includeIngredients=eggplant&apiKey=AUTH_VALUE",
+			"time": 98,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Тело ответа содержит строку": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тело ответа содержит строку": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Тело ответа содержит строку": true
+				}
+			]
+		},
+		{
+			"id": "9b59e8db-a475-409b-b164-7104ebbf8d00",
+			"name": "SearchRecipes",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?eggplant=cucumber&apiKey=AUTH_VALUE",
+			"time": 99,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Content-Type присутсвует в Headers": true,
+				"Тело присутсвует": true,
+				"Рецепт 715426 присутсвует в списке рецептов": true,
+				"Berry Banana Breakfast Smoothie не содержит Apple": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type присутсвует в Headers": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тело присутсвует": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Рецепт 715426 присутсвует в списке рецептов": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Berry Banana Breakfast Smoothie не содержит Apple": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				99
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Content-Type присутсвует в Headers": true,
+					"Тело присутсвует": true,
+					"Рецепт 715426 присутсвует в списке рецептов": true,
+					"Berry Banana Breakfast Smoothie не содержит Apple": true
+				}
+			]
+		},
+		{
+			"id": "80cb8ace-7860-4937-87cf-59246358f527",
+			"name": "SearchType",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?type=main course&apiKey=AUTH_VALUE",
+			"time": 136,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"В теле ответа текст содержит слово Bean": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"В теле ответа текст содержит слово Bean": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				136
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"В теле ответа текст содержит слово Bean": true
+				}
+			]
+		},
+		{
+			"id": "89b02624-6af5-40a1-8403-91e012141e1c",
+			"name": "SearchTypeBread",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?type=bread&apiKey=AUTH_VALUE",
+			"time": 93,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"В теле ответа текст содержит слово Bean": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"В теле ответа текст содержит слово Bean": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				93
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"В теле ответа текст содержит слово Bean": true
+				}
+			]
+		},
+		{
+			"id": "bb83a306-e6a8-4e8a-ad4a-4191bceb91f8",
+			"name": "SearchType",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?author=coffeebean&apiKey=AUTH_VALUE",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Соответствие ответа строке": true,
+				"Содержит ответ в теле": true,
+				"У конкретного id есть конкретный title": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Соответствие ответа строке": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Содержит ответ в теле": {
+					"pass": 1,
+					"fail": 0
+				},
+				"У конкретного id есть конкретный title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Соответствие ответа строке": true,
+					"Содержит ответ в теле": true,
+					"У конкретного id есть конкретный title": true
+				}
+			]
+		},
+		{
+			"id": "313851ea-806f-4967-959e-9f623d304b2c",
+			"name": "SearchSort",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?Sort=calories&apiKey=AUTH_VALUE",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Проверка, что в массиве элементов у конкр.id конкр.title": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка, что в массиве элементов у конкр.id конкр.title": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Проверка, что в массиве элементов у конкр.id конкр.title": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "f6c9a8fa-9707-422e-b932-2575c3a2d820",
+			"name": "SearchMaxProtein",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?200=200&apiKey=AUTH_VALUE",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Body содержит текст": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body содержит текст": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Body содержит текст": true
+				}
+			]
+		},
+		{
+			"id": "0cd3f28f-db09-4339-81ab-10512dc25b4d",
+			"name": "SearchMaxProtein50",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?200=50&apiKey=AUTH_VALUE",
+			"time": 98,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Успешный запрос 200": true,
+				"Body содержит текст": true,
+				"У конкретного id есть конкретный title": true
+			},
+			"testPassFailCounts": {
+				"Успешный запрос 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body содержит текст": {
+					"pass": 1,
+					"fail": 0
+				},
+				"У конкретного id есть конкретный title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Успешный запрос 200": true,
+					"Body содержит текст": true,
+					"У конкретного id есть конкретный title": true
+				}
+			]
+		},
+		{
+			"id": "54b3d90b-ebc5-4b13-aa65-9e2c365e1ab0",
+			"name": "SearchCuisinesGreek",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?cuisines=greek&apiKey=AUTH_VALUE",
+			"time": 94,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Обьект в виде массива с длиной": true,
+				"Body содержит текст": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Обьект в виде массива с длиной": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body содержит текст": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Обьект в виде массива с длиной": true,
+					"Body содержит текст": true
+				}
+			]
+		},
+		{
+			"id": "b34d7761-55a9-4b5d-bcf8-ce795ce04a46",
+			"name": "SearchCuisineBritish",
+			"url": " https://api.spoonacular.com/recipes/complexSearch?cuisines=british&apiKey=AUTH_VALUE",
+			"time": 93,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Connection is present": true,
+				"Server header is cloudflare": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Connection is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Server header is cloudflare": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				93
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Connection is present": true,
+					"Server header is cloudflare": true
+				}
+			]
+		},
+		{
+			"id": "a2d64886-a7c9-4223-8f20-78a263597359",
+			"name": "New Request",
+			"url": "https://api.spoonacular.com/recipes/cuisine?apiKey=AUTH_VALUE",
+			"time": 88,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				88
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "06d7d190-821f-4786-9369-80e0596a6716",
+			"name": "New Request",
+			"url": "https://api.spoonacular.com/recipes/cuisine?apiKey=AUTH_VALUE",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				84
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "366d6622-3f87-4019-8058-097a3abd7d96",
+			"name": "New Request",
+			"url": "https://api.spoonacular.com/recipes/cuisine?apiKey=AUTH_VALUE",
+			"time": 85,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body contains string": true,
+				"Some testing": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Some testing": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				85
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body contains string": true,
+					"Some testing": false
+				}
+			]
+		},
+		{
+			"id": "77aff71e-25bc-419e-b120-3a564c92fd0b",
+			"name": "New Request",
+			"url": "https://api.spoonacular.com/recipes/cuisine?cuisine=European&apiKey=AUTH_VALUE",
+			"time": 87,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test data type of the response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test data type of the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				87
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test data type of the response": true
+				}
+			]
+		},
+		{
+			"id": "199befba-fcfb-4ec6-ac1e-3ba3449d4474",
+			"name": "New Request",
+			"url": "https://api.spoonacular.com/recipes/cuisine?language=de&ingredientList=3 oz pork shoulder&apiKey=AUTH_VALUE",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test array properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test array properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				84
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test array properties": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2158,
+	"collection": {
+		"requests": [
+			{
+				"id": "6714a0fb-7959-4239-bb81-fbbdd7283d2f",
+				"method": "GET"
+			},
+			{
+				"id": "d5421531-41d7-4312-94b4-e3f4c1afb6ca",
+				"method": "GET"
+			},
+			{
+				"id": "4ac30b3e-2908-44fe-9805-8f2331084b38",
+				"method": "GET"
+			},
+			{
+				"id": "7530cd52-835d-415c-9a45-9d67c30aaf68",
+				"method": "GET"
+			},
+			{
+				"id": "22fbe71e-b614-4ff7-8584-a905c21f3ef1",
+				"method": "GET"
+			},
+			{
+				"id": "e5d94b41-ccd4-4344-8706-30954e07651a",
+				"method": "GET"
+			},
+			{
+				"id": "9b59e8db-a475-409b-b164-7104ebbf8d00",
+				"method": "GET"
+			},
+			{
+				"id": "80cb8ace-7860-4937-87cf-59246358f527",
+				"method": "GET"
+			},
+			{
+				"id": "89b02624-6af5-40a1-8403-91e012141e1c",
+				"method": "GET"
+			},
+			{
+				"id": "bb83a306-e6a8-4e8a-ad4a-4191bceb91f8",
+				"method": "GET"
+			},
+			{
+				"id": "313851ea-806f-4967-959e-9f623d304b2c",
+				"method": "GET"
+			},
+			{
+				"id": "f6c9a8fa-9707-422e-b932-2575c3a2d820",
+				"method": "GET"
+			},
+			{
+				"id": "0cd3f28f-db09-4339-81ab-10512dc25b4d",
+				"method": "GET"
+			},
+			{
+				"id": "54b3d90b-ebc5-4b13-aa65-9e2c365e1ab0",
+				"method": "GET"
+			},
+			{
+				"id": "b34d7761-55a9-4b5d-bcf8-ce795ce04a46",
+				"method": "GET"
+			},
+			{
+				"id": "a2d64886-a7c9-4223-8f20-78a263597359",
+				"method": "POST"
+			},
+			{
+				"id": "06d7d190-821f-4786-9369-80e0596a6716",
+				"method": "POST"
+			},
+			{
+				"id": "366d6622-3f87-4019-8058-097a3abd7d96",
+				"method": "POST"
+			},
+			{
+				"id": "77aff71e-25bc-419e-b120-3a564c92fd0b",
+				"method": "POST"
+			},
+			{
+				"id": "199befba-fcfb-4ec6-ac1e-3ba3449d4474",
+				"method": "POST"
+			}
+		]
+	}
+}
